@@ -18,7 +18,6 @@ public class Societe implements Serializable {
 
     public Societe(String nomSociete) {
         super();
-        System.out.println("re");
         this.nomSociete = nomSociete;
     }
 
