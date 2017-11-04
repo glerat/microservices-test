@@ -8,7 +8,7 @@ import javax.persistence.Entity;
 @Entity
 public class Societe implements Serializable {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
     private String nomSociete;
 

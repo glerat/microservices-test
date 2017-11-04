@@ -10,6 +10,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration;
+import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 
 @SpringBootApplication
 public class BoursSocieteServiceApplication {
@@ -26,11 +27,8 @@ public class BoursSocieteServiceApplication {
 	}
 }
 
-@Configuration
-class MyConfig extends RepositoryRestMvcConfiguration{
-	protected void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
-		config.exposeIdsFor(Societe.class);
-		
-	}
-	
-}
+//@Configuration
+//class MyConfig extends RepositoryRestMvcConfiguration{
+//
+//	
+//}
